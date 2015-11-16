@@ -48,7 +48,7 @@ namespace DT.FiniteStateMachine {
 			get { return _isFiniteTimeState; }
 		}
     
-		// PRAGMA MARK - INTERFACE 
+		// PRAGMA MARK - Public Interface 
     protected FiniteStateMachine<T> _machine;
     protected T _context;
 		

@@ -17,7 +17,7 @@ namespace DT.FiniteStateMachine {
 	 * (Note: All the credit goes towards StateKit [https://github.com/prime31/StateKit], awesome stuff!)
    */
 	public class FiniteStateMachine<T> where T : FiniteStateMachineImplementation<T> {
-		// PRAGMA MARK - INTERFACE
+		// PRAGMA MARK - Public Interface
     public FiniteStateMachine(T context, FSMState<T> initialState) {
       _context = context;
       

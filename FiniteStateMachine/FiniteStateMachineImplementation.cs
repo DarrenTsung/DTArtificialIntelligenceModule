@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace DT.FiniteStateMachine {
 	public abstract class FiniteStateMachineImplementation<T> : MonoBehaviour where T : FiniteStateMachineImplementation<T> {
-		// PRAGMA MARK - INTERFACE
+		// PRAGMA MARK - Public Interface
 		public virtual void HandleStateMachineStateChanged(FSMState<T> currentState) {}
 		
 		// PRAGMA MARK - INTERNAL 

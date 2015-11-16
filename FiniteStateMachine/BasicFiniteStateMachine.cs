@@ -24,7 +24,7 @@ namespace DT.FiniteStateMachine {
 
 
 	public class BState<TEnum> {
-		// PRAGMA MARK - INTERFACE 
+		// PRAGMA MARK - Public Interface 
 		public string TransitionToNextStateKey(BState<TEnum> stateNext) {
 			return this.TransitionToNextStateIdKey(stateNext.Id);
 		}
@@ -146,7 +146,7 @@ namespace DT.FiniteStateMachine {
 	 *		WalkExit 				 - called when the Walk state is exited
 	 * */
 	public class BasicFiniteStateMachine<TEnum> : MonoBehaviour where TEnum : IConvertible, IComparable, IFormattable {
-		// PRAGMA MARK - INTERFACE
+		// PRAGMA MARK - Public Interface
 		public void AddTransition(TEnum stateIdFrom, TEnum stateIdTo, int weight) {
 			BState<TEnum> stateFrom = this.StateFromId(stateIdFrom);
 			BState<TEnum> stateTo = this.StateFromId(stateIdTo);
